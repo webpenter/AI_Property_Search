@@ -1,0 +1,182 @@
+/* Colours default to the Houzez theme palette; app.js overrides --spot-accent / --spot-ink from the live site. */
+.spot-ai{--sa-ink:var(--spot-ink,#153048);--sa-muted:#565656;--sa-line:#e6e6e6;--sa-bg:#fff;--sa-soft:#f8f8f8;--sa-accent:var(--spot-accent,#ffa72a);--sa-accent-ink:#fff;--sa-warn:#8a4b00;--sa-warn-bg:#fff4e0;--sa-err:#b00020;
+	max-width:1100px;margin:0 auto;padding:32px 16px;color:var(--sa-ink);font-family:inherit;line-height:1.45}
+.spot-ai *{box-sizing:border-box}
+.spot-ai__eyebrow{margin:0;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--sa-accent);font-weight:600}
+.spot-ai__title{margin:4px 0 8px;font-size:clamp(26px,4vw,38px);line-height:1.15}
+.spot-ai__lead{margin:0 0 24px;color:var(--sa-muted);max-width:680px}
+.spot-ai__label{display:block;font-weight:600;margin-bottom:6px}
+.spot-ai__row{display:flex;gap:8px}
+.spot-ai__input{flex:1;min-width:0;padding:14px 16px;font-size:16px;border:1px solid var(--sa-line);border-radius:4px;background:var(--sa-bg);color:var(--sa-ink)}
+.spot-ai__input:focus,.spot-ai button:focus-visible,.spot-ai a:focus-visible{outline:3px solid rgba(255,167,42,.5);outline-offset:2px}
+.spot-ai__go,.spot-ai__btn{background:var(--sa-accent);color:var(--sa-accent-ink);border:1px solid var(--sa-accent);border-radius:4px;padding:12px 20px;font-size:15px;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block}
+.spot-ai__btn--ghost{background:transparent;color:var(--sa-accent)}
+.spot-ai__go:disabled{opacity:.6;cursor:wait}
+.spot-ai__mic{width:50px;border:1px solid var(--sa-line);background:var(--sa-bg);border-radius:4px;cursor:pointer;font-size:18px}
+.spot-ai__mic:disabled{opacity:.4;cursor:not-allowed}
+.spot-ai__mic.is-on{background:#ffe9ec;border-color:var(--sa-err)}
+.spot-ai__hint{min-height:20px;margin:6px 0 0;font-size:14px;color:var(--sa-muted)}
+.spot-ai__examples{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 16px}
+.spot-ai__chip{border:1px solid var(--sa-line);background:var(--sa-soft);color:var(--sa-ink);border-radius:999px;padding:7px 14px;font-size:14px;cursor:pointer}
+.spot-ai__chip--ex{background:var(--sa-bg)}
+.spot-ai__chips{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:12px 0}
+.spot-ai__chips-label{font-size:14px;color:var(--sa-muted)}
+.spot-ai__link{background:none;border:0;color:var(--sa-accent);text-decoration:underline;cursor:pointer;font-size:14px}
+.spot-ai__banner,.spot-ai__note,.spot-ai__ask{margin:8px 0;padding:10px 14px;border-radius:8px;font-size:14px;background:var(--sa-warn-bg);color:var(--sa-warn)}
+.spot-ai__note{background:var(--sa-soft);color:var(--sa-muted)}
+.spot-ai__ask{background:#fff3e0;color:var(--sa-ink);font-weight:600}
+.spot-ai__status--error{color:var(--sa-err);font-weight:600}
+.spot-ai__count{margin:16px 0 8px;color:var(--sa-muted)}
+.spot-ai__grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}
+.spot-ai__card{border:1px solid var(--sa-line);border-radius:14px;overflow:hidden;background:var(--sa-bg);display:flex;flex-direction:column}
+.spot-ai__media{position:relative;aspect-ratio:16/10;background:var(--sa-soft)}
+.spot-ai__media img{width:100%;height:100%;object-fit:cover;display:block}
+.spot-ai__ph{height:100%;display:grid;place-items:center;color:var(--sa-muted);font-size:18px;background:linear-gradient(135deg,#eef1f6,#e1e6ee)}
+.spot-ai__tag{position:absolute;top:10px;left:10px;background:rgba(20,33,61,.85);color:#fff;font-size:12px;padding:3px 9px;border-radius:999px}
+.spot-ai__body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:4px;flex:1}
+.spot-ai__price{margin:0;font-size:22px;font-weight:700}
+.spot-ai__facts{margin:0;color:var(--sa-muted);font-size:14px}
+.spot-ai__addr{margin:0;font-size:14px}
+.spot-ai__match{margin:6px 0 0;padding:0;list-style:none;font-size:13px;color:#176b3a}
+.spot-ai__miss{margin:2px 0 0;font-size:13px;color:var(--sa-muted)}
+.spot-ai__actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:12px}
+.spot-ai__actions .spot-ai__btn{padding:9px 14px;font-size:14px}
+.spot-ai__empty{border:1px dashed var(--sa-line);border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.spot-ai__empty h3{margin:0}
+.spot-ai__seller{border:1px solid var(--sa-line);background:var(--sa-soft);border-radius:14px;padding:18px;margin-bottom:16px}
+.spot-ai__seller p{margin:4px 0 12px}
+.spot-ai__fine{margin-top:28px;font-size:13px;color:var(--sa-muted)}
+.spot-ai__dialog{border:0;border-radius:14px;padding:24px;max-width:460px;width:calc(100% - 32px);color:var(--spot-ink,#153048)}
+.spot-ai__dialog::backdrop{background:rgba(20,33,61,.5)}
+.spot-ai__dialog h3{margin:0 0 4px}
+.spot-ai__dialog label{display:block;font-weight:600;font-size:14px;margin:12px 0 4px}
+.spot-ai__dialog input[type=text],.spot-ai__dialog input[type=email],.spot-ai__dialog input[type=tel],.spot-ai__dialog textarea{width:100%;padding:10px 12px;font-size:16px;border:1px solid #e3e7ee;border-radius:8px}
+.spot-ai__dialog .spot-ai__consent{font-weight:400;display:flex;gap:8px;align-items:flex-start}
+.spot-ai__hp{position:absolute!important;left:-9999px!important}
+@media (max-width:560px){.spot-ai__row{flex-wrap:wrap}.spot-ai__input{flex-basis:100%}.spot-ai__go{flex:1}}
+
+/* Placement on the Houzez homepage and results page */
+.spot-ai--home{max-width:none;margin:0;padding:28px 16px 20px;background:var(--sa-soft);border-bottom:1px solid var(--sa-line)}
+.spot-ai--home>*{max-width:1100px;margin-left:auto;margin-right:auto}
+.spot-ai--home .spot-ai__lead{margin-bottom:16px}
+.spot-ai--bar{max-width:none;margin:0;padding:10px 16px;background:var(--sa-soft);border-bottom:1px solid var(--sa-line)}
+.spot-ai--bar>*{max-width:1100px;margin-left:auto;margin-right:auto}
+.spot-ai--bar .spot-ai__input{padding:10px 14px}
+.spot-ai--bar .spot-ai__chips{margin:8px auto 0}
+.spot-ai--bar .spot-ai__note{margin:6px auto}
+.spot-ai__label--sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.spot-ai__mic[aria-pressed=true]{background:#ffe9ec;border-color:var(--sa-err)}
+
+/* ===== Floating AI Search (overrides the earlier top-bar placement) ===== */
+.spot-ai--float{position:fixed;right:20px;bottom:20px;z-index:99999;max-width:none;margin:0;padding:0;background:none;border:0;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+.spot-ai--float>*{max-width:none;margin:0}
+.spot-ai__fab{display:inline-flex;align-items:center;gap:6px;background:var(--sa-accent);color:#fff;border:0;border-radius:6px;padding:14px 22px;font-size:16px;font-weight:700;cursor:pointer;box-shadow:0 8px 24px rgba(255,167,42,.5);transition:transform .15s}
+.spot-ai__fab:hover{transform:translateY(-2px)}
+.spot-ai__fab.is-open{background:var(--sa-ink);box-shadow:0 8px 24px rgba(20,33,61,.3)}
+.spot-ai__panel{position:relative;width:min(440px,calc(100vw - 32px));max-height:min(78vh,680px);overflow:auto;background:#fff;border:1px solid var(--sa-line);border-radius:18px;box-shadow:0 20px 50px rgba(20,33,61,.25);padding:22px 20px 18px}
+.spot-ai__panel[hidden]{display:none}
+.spot-ai__close{position:absolute;top:10px;right:12px;width:34px;height:34px;border:0;background:var(--sa-soft);border-radius:50%;font-size:22px;line-height:1;cursor:pointer;color:var(--sa-ink)}
+.spot-ai__panel .spot-ai__head{padding-right:30px}
+.spot-ai__panel .spot-ai__title{font-size:22px;margin:2px 0 6px}
+.spot-ai__panel .spot-ai__lead{font-size:14px;margin:0 0 14px}
+.spot-ai__panel .spot-ai__row{flex-wrap:wrap}
+.spot-ai__panel .spot-ai__input{flex:1 1 100%;order:1}
+.spot-ai__panel .spot-ai__mic{order:2;height:46px}
+.spot-ai__panel .spot-ai__go{order:3;flex:1;height:46px}
+.spot-ai__panel .spot-ai__examples{margin:10px 0 4px}
+.spot-ai__panel .spot-ai__chip--ex{font-size:13px;text-align:left;border-radius:12px}
+.spot-ai__panel .spot-ai__chips{margin:10px 0 0}
+@media (max-width:560px){
+ .spot-ai--float{right:12px;bottom:12px;left:12px;align-items:stretch}
+ .spot-ai__fab{align-self:flex-end}
+ .spot-ai__panel{width:100%;max-height:80vh}
+}
+
+/* "AI Search" entry placed under the existing Houzez search form */
+.spot-ai__inline-btn{flex:0 0 100%;display:flex;align-items:center;justify-content:center;gap:6px;width:100%;margin:10px 0 0;padding:11px 16px;font:inherit;font-weight:500;font-size:15px;background:transparent;color:var(--spot-accent,#ffa72a);border:1px solid var(--spot-accent,#ffa72a);border-radius:3px;cursor:pointer;transition:background .15s,color .15s}
+.spot-ai__inline-btn:hover,.spot-ai__inline-btn:focus-visible{background:var(--spot-accent,#ffa72a);color:#fff;outline:none}
+.spot-ai__fab{font-family:inherit;font-weight:500}
+.spot-ai__fab:focus-visible,.spot-ai__go:focus-visible{outline:3px solid rgba(255,167,42,.5);outline-offset:2px}
+.spot-ai__fab.is-open{background:var(--spot-ink,#153048)}
+@media (prefers-reduced-motion:reduce){.spot-ai__fab,.spot-ai__inline-btn{transition:none}}
+
+/* Compact floating panel: no heading, so leave room for the close button only */
+.spot-ai--float .spot-ai__panel{padding:46px 16px 16px}
+.spot-ai--float .spot-ai__examples{margin:10px 0 0;gap:6px}
+.spot-ai--float .spot-ai__chip--ex{padding:8px 12px;font-size:14px}
+.spot-ai--float .spot-ai__hint:empty{display:none}
+.spot-ai--float .spot-ai__hint{margin:6px 0 0}
+
+/* Reality check / compromise options */
+.spot-ai__empty{gap:8px;padding:14px}
+.spot-ai__headline{margin:0;font-weight:600;color:var(--sa-ink);font-size:15px;line-height:1.35}
+.spot-ai__question{margin:0;color:var(--sa-muted);font-size:14px}
+.spot-ai__opt{display:flex;justify-content:space-between;align-items:center;gap:10px;width:100%;text-align:left;padding:10px 12px;font:inherit;font-size:14px;background:#fff;color:var(--sa-ink);border:1px solid var(--spot-accent,#ffa72a);border-radius:4px;cursor:pointer}
+.spot-ai__opt:hover,.spot-ai__opt:focus-visible{background:var(--spot-accent,#ffa72a);color:#fff;outline:none}
+.spot-ai__opt-count{flex:none;font-weight:600;font-size:13px;white-space:nowrap}
+
+/* ===== v0.7 colour system: every state is explicit so theme button:hover rules can never turn things white-on-white ===== */
+.spot-ai,.spot-ai__inline-btn,.spot-ai__dialog{
+	--sa-a:var(--spot-accent,#ffa72a);
+	--sa-a-dark:color-mix(in srgb,var(--sa-a) 80%,#000);
+	--sa-a-tint:color-mix(in srgb,var(--sa-a) 14%,#fff);
+	--sa-a-tint2:color-mix(in srgb,var(--sa-a) 24%,#fff);
+	--sa-text:var(--spot-ink,#153048);
+}
+/* Solid buttons: Search, Send, Request a showing, the floating button */
+.spot-ai button.spot-ai__go,.spot-ai .spot-ai__btn:not(.spot-ai__btn--ghost),.spot-ai button.spot-ai__fab,.spot-ai__dialog .spot-ai__btn:not(.spot-ai__btn--ghost){
+	background:var(--sa-a)!important;color:#fff!important;border:1px solid var(--sa-a)!important;text-shadow:none!important;opacity:1;
+}
+.spot-ai button.spot-ai__go:hover,.spot-ai button.spot-ai__go:focus-visible,.spot-ai button.spot-ai__go:active,
+.spot-ai .spot-ai__btn:not(.spot-ai__btn--ghost):hover,.spot-ai .spot-ai__btn:not(.spot-ai__btn--ghost):focus-visible,.spot-ai .spot-ai__btn:not(.spot-ai__btn--ghost):active,
+.spot-ai button.spot-ai__fab:hover,.spot-ai button.spot-ai__fab:focus-visible,.spot-ai button.spot-ai__fab:active,
+.spot-ai__dialog .spot-ai__btn:not(.spot-ai__btn--ghost):hover,.spot-ai__dialog .spot-ai__btn:not(.spot-ai__btn--ghost):focus-visible{
+	background:var(--sa-a-dark)!important;color:#fff!important;border-color:var(--sa-a-dark)!important;
+}
+.spot-ai button.spot-ai__fab.is-open{background:var(--sa-text)!important;border-color:var(--sa-text)!important;color:#fff!important}
+.spot-ai button.spot-ai__go:disabled{background:var(--sa-a)!important;opacity:.55}
+/* Outline buttons: "Ask a question", broaden options, the "Or describe your dream home" line */
+.spot-ai .spot-ai__btn--ghost,.spot-ai button.spot-ai__opt,button.spot-ai__inline-btn,.spot-ai__dialog .spot-ai__btn--ghost{
+	background:#fff!important;color:var(--sa-text)!important;border:1px solid var(--sa-a)!important;text-shadow:none!important;opacity:1;
+}
+.spot-ai .spot-ai__btn--ghost:hover,.spot-ai .spot-ai__btn--ghost:focus-visible,.spot-ai .spot-ai__btn--ghost:active,
+.spot-ai button.spot-ai__opt:hover,.spot-ai button.spot-ai__opt:focus-visible,.spot-ai button.spot-ai__opt:active,
+button.spot-ai__inline-btn:hover,button.spot-ai__inline-btn:focus-visible,button.spot-ai__inline-btn:active,
+.spot-ai__dialog .spot-ai__btn--ghost:hover{
+	background:var(--sa-a-tint2)!important;color:var(--sa-text)!important;border-color:var(--sa-a-dark)!important;
+}
+button.spot-ai__inline-btn{color:var(--sa-a-dark)!important;font-weight:600}
+button.spot-ai__inline-btn:hover,button.spot-ai__inline-btn:focus-visible{color:var(--sa-text)!important}
+.spot-ai button.spot-ai__opt .spot-ai__opt-count{color:var(--sa-a-dark)!important}
+/* Chips: example prompts and the removable filters */
+.spot-ai button.spot-ai__chip{background:#f1f4f7!important;color:var(--sa-text)!important;border:1px solid #dfe5ec!important;text-shadow:none!important;opacity:1}
+.spot-ai button.spot-ai__chip--ex{background:#fff!important}
+.spot-ai button.spot-ai__chip:hover,.spot-ai button.spot-ai__chip:focus-visible,.spot-ai button.spot-ai__chip:active{background:var(--sa-a-tint)!important;color:var(--sa-text)!important;border-color:var(--sa-a)!important}
+/* Mic, close, links */
+.spot-ai button.spot-ai__mic,.spot-ai button.spot-ai__close{background:#fff!important;color:var(--sa-text)!important;border:1px solid #dfe5ec!important;text-shadow:none!important;opacity:1}
+.spot-ai button.spot-ai__close{background:#f1f4f7!important;border-color:transparent!important}
+.spot-ai button.spot-ai__mic:hover,.spot-ai button.spot-ai__mic:focus-visible,.spot-ai button.spot-ai__close:hover,.spot-ai button.spot-ai__close:focus-visible{background:var(--sa-a-tint2)!important;color:var(--sa-text)!important;border-color:var(--sa-a)!important}
+.spot-ai button.spot-ai__mic:disabled{opacity:.4}
+.spot-ai button.spot-ai__mic.is-on,.spot-ai button.spot-ai__mic[aria-pressed=true]{background:#ffe9ec!important;border-color:#d93a4f!important}
+.spot-ai button.spot-ai__link,.spot-ai a.spot-ai__link{background:none!important;color:var(--sa-a-dark)!important;text-decoration:underline}
+.spot-ai button.spot-ai__link:hover,.spot-ai button.spot-ai__link:focus-visible{background:none!important;color:var(--sa-text)!important}
+/* Text colours inside the panel never inherit a theme's white */
+.spot-ai__panel,.spot-ai__panel p,.spot-ai__panel span,.spot-ai__panel h3{color:inherit}
+.spot-ai__panel{color:var(--sa-text)}
+.spot-ai__headline{color:var(--sa-text)!important}
+.spot-ai__question,.spot-ai__hint,.spot-ai__chips-label{color:#566375!important}
+.spot-ai__input{color:var(--sa-text)!important;background:#fff!important}
+.spot-ai__input::placeholder{color:#7a8595}
+
+
+/* Inline results list (themes without a Houzez-style results page) */
+.spot-ai__list{display:flex;flex-direction:column;gap:10px;margin-top:8px}
+.spot-ai__item{display:flex;gap:12px;align-items:stretch;border:1px solid #e3e8ee;border-radius:8px;overflow:hidden;background:#fff}
+.spot-ai__item-img{flex:0 0 96px;min-height:84px;background:#eef2f6;display:block}
+.spot-ai__item-img img{width:100%;height:100%;object-fit:cover;display:block}
+.spot-ai__item-body{display:flex;flex-direction:column;gap:2px;padding:8px 10px 8px 0;min-width:0}
+.spot-ai__item-title{font-weight:600;color:var(--sa-text,#153048)!important;text-decoration:none;line-height:1.3;overflow-wrap:anywhere}
+.spot-ai__item-title:hover{text-decoration:underline;color:var(--sa-a-dark,#0a6)!important}
+.spot-ai__item-price{font-weight:700;color:var(--sa-a-dark,#0a6)}
+.spot-ai__item-meta{font-size:13px;color:#566375}
+.spot-ai__item-ok{font-size:12px;color:#176b3a}
