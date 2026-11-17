@@ -8,9 +8,7 @@ Works with **Houzez** and **Listeo** (verified), plus presets for **Homey, WPRes
 
 ## Demo
 
-<video src="https://github.com/webpenter/AI_Property_Search/raw/main/docs/demo.mp4" controls muted width="100%"></video>
-
-If the player doesn't load, [download the video](docs/demo.mp4).
+https://github.com/user-attachments/assets/9a50b9dd-9ab7-4718-a277-6c4660d55b3e
 
 ## Features
 
